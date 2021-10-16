@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MainPage</title>
+    <link rel="stylesheet" href="static/main.css">
+</head>
+<body>
+<h2>The Bill Form</h2>
+<p>Fill in the form and click the button to get the results</p>
+<form action="/results2" method = "POST"]>
+    {{billform.amount.label}} {{billform.amount}}
+    <br>   
+    {{billform.period.label}} {{billform.period}}
+    <br>
+    {{billform.flatmates.label}} {{billform.flatmates}}
+    <hr>
+    <p>First Flatmate</p>
+    {{billform.name1.label}} {{billform.name1}}
+    <br>
+    {{billform.days_in_house1.label}} {{billform.days_in_house1}}
+    <hr>
+    <p>Second Flatmate</p>
+    {{billform.name2.label}} {{billform.name2}}
+    <br>
+    {{billform.days_in_house2.label}} {{billform.days_in_house2}}
+    <br>
+    <p>Third Flatmate</p>
+    {{billform.name3.label}} {{billform.name3}}
+    <br>
+    {{billform.days_in_house3.label}} {{billform.days_in_house3}}
+    <br>
+    <p>Fourth Flatmate</p>
+    {{billform.name4.label}} {{billform.name4}}
+    <br>
+    {{billform.days_in_house4.label}} {{billform.days_in_house4}}
+    <br>
+    <p>Fifth Flatmate</p>
+    {{billform.name5.label}} {{billform.name5}}
+    <br>
+    {{billform.days_in_house5.label}} {{billform.days_in_house5}}
+    <br>
+    {{billform.button}}
+</form>
+</body>
+</html>
