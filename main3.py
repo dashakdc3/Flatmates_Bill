@@ -4,7 +4,7 @@ from wtforms import Form, StringField, SubmitField
 
 from flask import Flask, render_template, request
 
-from flatmatres1_bill.flat import Bill, Flatmate
+from flatmates1_bill.flat import Bill, Flatmate
 
 app = Flask(__name__)
 
